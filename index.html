@@ -40,7 +40,7 @@
                 <div class="header-logo">
                     <img src="img/logo.png" alt="header-logo" />
                 </div>
-                
+
                 <div class="hamburger">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -50,28 +50,28 @@
                 <nav class="header-menu navbar">
                     <ul>
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="#home" class="buttonClick">Home</a>
                         </li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about" class="buttonClick">About</a>
                         </li>
                         <li>
-                            <a href="#menu">Menu</a>
+                            <a href="#menu" class="buttonClick">Menu</a>
                         </li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#services" class="buttonClick">Services</a>
                         </li>
                         <li>
-                            <a href="#gallery">Gallery</a>
+                            <a href="#gallery" class="buttonClick">Gallery</a>
                         </li>
                         <li>
-                            <a href="#testimonials">Testimonials</a>
+                            <a href="#testimonials" class="buttonClick">Testimonials</a>
                         </li>
                         <li>
-                            <a href="#blogs">Blogs</a>
+                            <a href="#blogs" class="buttonClick">Blogs</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#contact" class="buttonClick">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -771,10 +771,20 @@
     <script src="js/main.js" type="text/javascript"></script>
     <script type="text/javascript">
         const hamburger = document.querySelector('.hamburger');
+        const buttonClick = document.querySelectorAll('.buttonClick');
+
         hamburger.onclick = function () {
-            headerMenu = document.querySelector('.header-menu');
+            const headerMenu = document.querySelector('.header-menu');
             headerMenu.classList.toggle('active');
         }
+
+        // Loop through each button and attach the event handler
+        buttonClick.forEach(button => {
+            button.onclick = function () {
+                const headerMenu = document.querySelector('.header-menu');
+                headerMenu.classList.remove('active');
+            }
+        });
     </script>
 
 </body>
