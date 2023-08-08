@@ -315,6 +315,12 @@
     justify-content: start;
     margin-bottom: 40px;
   }
+
+  .footer-end .row .credit p a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -388,5 +394,3 @@
     font-size: 16px;
   }
 }
-
-/*# sourceMappingURL=responsive.css.map */
