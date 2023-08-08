@@ -65,6 +65,18 @@
     padding-right: 40px;
   }
 
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+  }
+
   header .header-logo {
     padding: 30px 0;
   }
@@ -100,10 +112,6 @@
 
   header .header-menu ul li a {
     font-size: 22px;
-  }
-
-  header .menubar-parent a .menu-btn {
-    display: block;
   }
 
   .banner .col-6 {

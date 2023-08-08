@@ -166,7 +166,8 @@ input:focus {
   font-weight: 700;
   color: #213344;
 }
-.humburger{
+
+.humburger {
   display: none;
 }
 
@@ -206,16 +207,28 @@ header .header-menu ul li a {
   padding: 15px 7px;
   margin: 10px 15px;
   font-size: 14px;
+  transition: all 0.3s ease-in-out;
 }
 
-header .menubar-parent a .menu-btn {
+header .header-menu ul li a:hover {
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* header .menubar-parent a .menu-btn {
   display: none;
   margin-right: 5px;
   outline: none;
   background-color: transparent;
   border: none;
   font-size: 25px;
-}
+} */
 
 .banner {
   padding-top: 150px;
@@ -697,7 +710,7 @@ header .menubar-parent a .menu-btn {
   padding: 0 15px;
 }
 
-.app .container .row .col-6 .app-data{
+.app .container .row .col-6 .app-data {
   padding: 11rem 0rem;
 }
 
