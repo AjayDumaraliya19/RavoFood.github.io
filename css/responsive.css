@@ -65,12 +65,12 @@
     padding-right: 40px;
   }
 
-  .hamburger {
+  header .hamburger {
     display: block;
     cursor: pointer;
   }
 
-  .hamburger .line {
+  header .hamburger .line {
     width: 30px;
     height: 3px;
     background-color: #000000;
