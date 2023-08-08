@@ -204,17 +204,17 @@ header .header-menu ul li {
 header .header-menu ul li a {
   color: #213344;
   display: inline-block;
-  padding: 15px 7px;
+  padding: 15px 20px;
   margin: 10px 15px;
   font-size: 14px;
   transition: all 0.3s ease-in-out;
 }
 
 header .header-menu ul li a:hover {
-  color: #fff;
+  color: #fc6816;
   border: none;
-  border-radius: 50%;
-  background-color: #000;
+  border-radius: 50px;
+  background-color: #ffffff;
 }
 
 .hamburger {
